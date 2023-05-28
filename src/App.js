@@ -17,7 +17,7 @@ function App() {
         </p>
         <p className="developer">
           <span>
-            <a href="https://github.com/Nata16082022/weather-react">
+            <a href="https://github.com/Nata16082022/React_Weather">
               Link to repository GitHub
             </a>
           </span>
