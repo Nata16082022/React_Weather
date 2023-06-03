@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CurrentDate from "./CurrentDate";
+import CurrentTime from "./CurrentTime";
+import FullDays from "./FullDays";
 
 export default function Current(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,6 +17,7 @@ export default function Current(props) {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
       pressure: response.data.main.pressure,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -37,9 +41,15 @@ export default function Current(props) {
           </div>
 
           <div className="col-3">
-            <p>Sunday</p>
-            <p>17 July 2022</p>
-            <p>17:07:58</p>
+            <p>
+              <FullDays date={weatherData.date} />
+            </p>
+            <p>
+              <CurrentDate date={weatherData.date} />
+            </p>
+            <p>
+              <CurrentTime date={weatherData.date} />
+            </p>
           </div>
           <div className="col-5">
             <p>Precipitation : {Math.round(weatherData.humidity)}%</p>
