@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+
 import Header from "./Header";
 import Current from "./Current";
 import Forecast from "./Forecast";
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <Current />
+        <Current defaultCity="Tokyo" />
         <Forecast />
         <p className="developer">
           This page was built by

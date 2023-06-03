@@ -84,6 +84,7 @@ img {
 
 .status {
   margin: 0 0 0 30px;
+  text-transform: capitalize;
 }
 .big-text {
   font-size: 40px;
