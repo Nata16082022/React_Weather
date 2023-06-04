@@ -25,8 +25,8 @@ export default function CurrentDate(props) {
   }
 
   return (
-    <div>
+    <span>
       {day} {month} {year}
-    </div>
+    </span>
   );
 }

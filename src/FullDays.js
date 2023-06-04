@@ -12,5 +12,5 @@ export default function FullDays(props) {
   ];
   let day = fullDays[props.date.getDay()];
 
-  return <div>{day}</div>;
+  return <span>{day}</span>;
 }

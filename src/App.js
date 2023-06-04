@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-import Header from "./Header";
 import Current from "./Current";
 import Forecast from "./Forecast";
 
@@ -9,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Header />
-        <Current defaultCity="Tokyo" />
+        <Current defaultCity="Amsterdam" />
         <Forecast />
         <p className="developer">
           This page was built by
