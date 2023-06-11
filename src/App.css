@@ -87,7 +87,7 @@ img {
   text-transform: capitalize;
 }
 .big-text {
-  font-size: 40px;
+  font-size: 45px;
   text-align: left;
   line-height: 105px;
 }
@@ -110,7 +110,7 @@ img {
   text-align: center;
   font-size: 10px;
   font-weight: bold;
-  margin: 30px auto 5px auto;
+  margin: 10px auto 5px auto;
   text-indent: 0;
 }
 .col-2 {
@@ -121,4 +121,10 @@ img {
 .col-2:hover {
   border: 2px solid #026fc5;
   background-color: #d3f0f7;
+}
+
+.unit {
+  font-size: 20px;
+  vertical-align: 15px;
+  line-height: 105px;
 }

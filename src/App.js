@@ -2,14 +2,13 @@ import React from "react";
 import "./App.css";
 
 import Current from "./Current";
-import Forecast from "./Forecast";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <Current defaultCity="Amsterdam" />
-        <Forecast />
+
         <p className="developer">
           This page was built by
           <span> Nataliia Miniailo </span>
